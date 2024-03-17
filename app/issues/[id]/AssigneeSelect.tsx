@@ -1,12 +1,10 @@
 'use client';
 
+import { Skeleton } from '@/app/components';
 import { User } from '@prisma/client';
 import { Select } from '@radix-ui/themes';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { Socket } from 'net';
-import React, { useEffect, useState } from 'react';
-import { Skeleton } from '@/app/components';
 
 const AssigneeSelect = () => {
   const {
